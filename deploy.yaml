@@ -1,0 +1,4 @@
+# deployment specifics — all CONSUMES, matched by exact id elsewhere
+vertexEndpoint: projects/847561/locations/europe-west2/endpoints/4482913776         # == tf-serving-infra provides   [T11]
+serviceAccount: scorer-runtime@acme-ml.iam.gserviceaccount.com          # == tf-serving-infra provides   [T12]
+image: europe-docker.pkg.dev/acme-ml/serving/scorer@sha256:3f9c0bce11d4a7f2c9a0b5e6d7c8f901a2b3c4d5e6f70819a2b3c4d5e6f70819a                 # == build-forge provides        [T13]
